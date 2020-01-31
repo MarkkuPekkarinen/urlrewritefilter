@@ -84,6 +84,11 @@
                         <!--<properties>
                             <cargo.logging>high</cargo.logging>
                         </properties> -->
+<!--                                                                       <properties>
+                        <cargo.start.jvmargs>
+                            -agentlib:jdwp=transport=dt_socket,suspend=y,server=y,address=localhost:9000
+                        </cargo.start.jvmargs>
+                        </properties>-->
                     </configuration>
                 </configuration>
                 <executions>
@@ -128,7 +133,6 @@
             <groupId>commons-httpclient</groupId>
             <artifactId>commons-httpclient</artifactId>
             <version>3.1</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
